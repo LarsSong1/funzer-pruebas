@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="aside.css">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <title>Aside</title>
+</head>
+
+<body>
+  <div class="contenedor-principal container-fluid">
+    <div class="d-flex pt-3 pb-3">
+      <!-- Link side -->
+      <aside class="sidebar d-flex flex-column justify-content-between align-items-center">
+        <nav class="navbar navbar-expand-sm  d-flex flex-column">
+          <!-- Logo -->
+          <div class="d-flex justify-content-center align-items-center mt-0 mt-lg-4">
+            <img src="funzer.svg" alt="funzer.svg" class="img-fluid funzer-logo ">
+          </div>
+          <h1 class="funzer-texto pb-0 pb-lg-5oiuy">Funzer</h1>
+          <div class="container-fluid pt-0 pt-lg-5">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav d-flex flex-column">
+                <li id="link" class="nav-item active">
+                  <a  class="nav-link" id="seleccion"  aria-current="page" href="#">
+                    <ion-icon name="copy-outline"></ion-icon>
+                    Home
+                  </a>
+                </li>
+                <li id="link" class="nav-item">
+                  <a  class="nav-link" id="seleccion"  aria-current="page" href="#">
+                    <ion-icon name="copy-outline"></ion-icon>
+                    Categorias
+                  </a>
+                </li>
+                <li id="link" class="nav-item">
+                  <a  class="nav-link" href="#">
+                    <ion-icon name="book-outline"></ion-icon>
+                    Cursos Populares</a>
+                </li>
+                <li id="link" class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle" id="seleccion" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <ion-icon name="glasses-outline"></ion-icon>
+                    Guía
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ramas y aplicaciones de la programación</a></li>
+                    <li><a class="dropdown-item" href="#">Back End</a></li>
+                    <li><a class="dropdown-item" href="#">Front End</a></li>
+                    <li><a class="dropdown-item" href="#">Base de Datos</a></li>
+                    <li><a class="dropdown-item" href="#">ETC</a></li>
+                  </ul>
+                </li>
+                <li id="link" class="nav-item">
+                  <a  class="nav-link" href="#">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    Proyectos
+                  </a>
+                </li>
+                <li id="link" class="nav-item">
+                  <a class="nav-link" href="#">
+                    <ion-icon name="help-outline"></ion-icon>
+                    Curiosidades</a>
+                </li>
+                <li id="link" class="nav-item">
+                  <a class="nav-link" href="#">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Sobre Nosotros</a>
+                </li>
+                <li id="link" class="nav-item">
+                  <a  class="nav-link" href="#">
+                    <ion-icon name="create-outline"></ion-icon>
+                    Subscribirme</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <ul class="list-unstyled pb-0 pb-lg-5">
+          <li>
+            <a href="">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+              Salir
+            </a>
+          </li>
+        </ul>
+
+      </aside>
+      <div class="contenido-dash">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary col-12" id="navegacion-horizontal">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <script src="aside.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
